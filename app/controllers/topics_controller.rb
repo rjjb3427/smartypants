@@ -19,6 +19,10 @@ class TopicsController < ApplicationController
     end
   end
 
+  def show
+    redirect_to topic_posts_path(topic_id: @topic)
+  end
+
   def edit
   end
 
