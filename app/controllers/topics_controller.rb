@@ -5,9 +5,6 @@ class TopicsController < ApplicationController
     @topics = Topic.all
   end
 
-  def show
-  end
-
   def new
     @topic = Topic.new
   end
@@ -16,9 +13,9 @@ class TopicsController < ApplicationController
     @topic = Topic.new(topic_params)
 
     if @topic.save
-      redirect_to topic_path(@topic), notice: 'Topic was successfully created!'
+      redirect_to topic_posts_path(topic_id: @topic), notice: 'Topic was successfully created.'
     else
-      render new
+      render :new
     end
   end
 
@@ -26,22 +23,20 @@ class TopicsController < ApplicationController
   end
 
   def update
-
     if @topic.update(topic_params)
-      redirect_to topic_path(@topic), notice: 'Your topic was successfully updated.'
+      redirect_to topic_posts_path(topic_id: @topic), notice: 'Your topic was successfully updated.'
     else
       render :edit, notice: 'There was an error processing your request!'
     end
   end
 
-
   private
 
-    def set_topic
-      @topic = Topic.friendly.find(params[:id])
-    end
+  def topic_params
+    params.require(:topic).permit(:title)
+  end
 
-    def topic_params
-      params.require(:topic).permit(:title)
-    end
+  def set_topic
+    @topic = Topic.friendly.find(params[:id])
+  end
 end
