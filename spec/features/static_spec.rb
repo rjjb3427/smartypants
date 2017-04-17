@@ -32,4 +32,10 @@ describe 'homepage' do
       expect(page).to have_link(@topic.title, href: topic_path(@topic))
     end
   end
+
+  describe 'header' do
+     it 'displays a welcome message to guest users' do
+       expect(page).to have_content("Guest")
+     end
+   end
 end

@@ -1,28 +1,6 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## TODO
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. Well This Application looks like crap in Heroku, I need to figure out whats going on
+  - Possible solution would be to dockerize the app but that would require so much more work </br> that I don't feel like doing.
