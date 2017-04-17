@@ -15,6 +15,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'kaminari', '~> 0.17.0'
 gem 'pundit'
+gem "administrate", "~> 0.2.2"
+gem 'bourbon'
 
 group :development, :test do
   gem 'byebug'
