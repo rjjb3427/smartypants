@@ -17,6 +17,7 @@ gem 'kaminari', '~> 0.17.0'
 gem 'pundit'
 gem "administrate", "~> 0.2.2"
 gem 'bourbon'
+gem "sentry-raven"
 
 group :development, :test do
   gem 'byebug'
