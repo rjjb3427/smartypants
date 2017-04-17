@@ -1,7 +1,7 @@
 [![Code Climate](https://codeclimate.com/github/rjjb3427/smartypants/badges/gpa.svg)](https://codeclimate.com/github/rjjb3427/smartypants)
 
-== README
-Application is located at - https://murmuring-caverns-23753.herokuapp.com/users/sign_up
+## README
+Application is located at -  https://murmuring-caverns-23753.herokuapp.com/users/sign_up </br>
 Admin dashboard currently has no password - https://murmuring-caverns-23753.herokuapp.com/admin
 
 ## TODO
